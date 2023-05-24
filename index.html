@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/e7fb1962f5.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kosugi&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/slyles.css" />
+  <title>Pizza prepairing</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header" class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <img class="header__logo-dark hidden" src="./images/background__night/home/icons/Pizza Slice.svg"
+            alt="Pizza slice" width="46" height="46" />
+          <img class="header__logo-light hidden" src="./images/background__day/home/icons/Pizza Slice.svg"
+            alt="Pizza slice" width="46" height="46" />
+          <span class="header__logo-name">mania</span>
+        </a>
+        <nav class="header__menu" menu>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#home" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#menu" class="menu__link">Menu</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" id="coupon-modal" class="menu__link">Specials & Coupons</a>
+            </li>
+            <li class="menu__item">
+              <a href="#reservation" class="menu__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <section id="home" class="page__family family">
+        <div class="family__container">
+          <div class="family__body">
+            <div class="family__content">
+              <h1 class="family__title">Pizza family</h1>
+              <div class="family__subtitle">
+                people disappoint,<br />
+                but pizza never does.
+              </div>
+              <div class="family__form-search">
+                <form action="get" class="form-search">
+                  <input type="text" class="form-search__input" name="location" disabled />
+                  <button type="button" class="form-search__btn">
+                    <img class="form-search__icon" src="./images/background__night/family/icons/search.svg"
+                      alt="icon search" />
+                    <span class="form-search__text">Search Location</span>
+                  </button>
+                </form>
+              </div>
+              <div class="family__btn">
+                <button type="button" class="family__btn-link">
+                  Try now
+                </button>
+              </div>
+            </div>
+            <div class="family__image">
+              <div class="family__image-burger __ibg">
+                <img class="burger__dark hidden" src="./images/background__night/family/pictures/burger.png"
+                  alt="Burger" width="972" height="697" />
+                <img class="burger__light hidden" src="./images/background__day/family/pictures/burger.png" alt="Burger"
+                  width="973" height="697" />
+              </div>
+              <img class="family__image-sun hidden" src="./images/background__night/family/icons/Cloud with Sun.svg"
+                alt="Cloud with Sun" width="89" height="71" />
+              <img class="family__image-moon hidden" src="./images/background__day/family/icons/Cloud with moon.svg"
+                alt="Cloud with Moon" width="89" height="71" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="menu" class="page__menu menu">
+        <div class="menu__container">
+          <h1 class="menu__header">Menu</h1>
+          <div class="menu__body">
+            <div class="menu__body-img __ibg">
+              <img src="./images/background__night/menu/pictures/pizza.png" alt="Pizza" />
+            </div>
+            <div class="menu__body-content">
+              <div class="menu__slice menu-items">
+                <div class="menu-items__item item-menu">
+                  <h2 class="item-menu__header">Pizza ingredients</h2>
+                  <ul class="item-menu__list">
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Tomato sauce</span>
+                      <span>...............</span>
+                      <span class="menu-option__ingredientCost">$1.80</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Mozarella</span>
+                      <span>..................</span>
+                      <span class="menu-option__ingredientCost">$2.25</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Cheddar</span>
+                      <span>....................</span>
+                      <span class="menu-option__ingredientCost">$3.20</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Pepperoni</span>
+                      <span>..................</span>
+                      <span class="menu-option__ingredientCost">$2.90</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Mushrooms</span>
+                      <span>..................</span>
+                      <span class="menu-option__ingredientCost">$1.45</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Chicken</span>
+                      <span>....................</span>
+                      <span class="menu-option__ingredientCost">$4.25</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Hunting sausage</span>
+                      <span>............</span>
+                      <span class="menu-option__ingredientCost">$3.70</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Becon</span>
+                      <span>......................</span>
+                      <span class="menu-option__ingredientCost">$5.65</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Onion</span>
+                      <span>......................</span>
+                      <span class="menu-option__ingredientCost">$0.95</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Parmesan</span>
+                      <span>...................</span>
+                      <span class="menu-option__ingredientCost">$3.05</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Tomato</span>
+                      <span>.....................</span>
+                      <span class="menu-option__ingredientCost">$0.60</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Sour cream</span>
+                      <span>.................</span>
+                      <span class="menu-option__ingredientCost">$2.15</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__ingredientName">Pineapple</span>
+                      <span>..................</span>
+                      <span class="menu-option__ingredientCost">$1.75</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="menu-items__item item-menu">
+                  <h2 class="item-menu__header">Pizza cakes size</h2>
+                  <ul class="item-menu__list">
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__pizzaName">Pizza cake 20cm</span>
+                      <span>............</span>
+                      <span class="menu-option__pizzaCost">$5.70</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__pizzaName">Pizza cake 25cm</span>
+                      <span>............</span>
+                      <span class="menu-option__pizzaCost">$6.45</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__pizzaName">Pizza cake 30cm</span>
+                      <span>............</span>
+                      <span class="menu-option__pizzaCost">$7.25</span>
+                    </li>
+                    <li class="item-menu__option menu-option">
+                      <span class="menu-option__pizzaName">Pizza cake 35cm</span>
+                      <span>............</span>
+                      <span class="menu-option__pizzaCost">$8.50</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu__gourmet">
+                <div class="menu__gourmet-items gourmet-items">
+                  <h2 class="gourmet-items__header">Pizza menu</h2>
+                  <ul class="gourmet-items__item item-gourmet">
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Peperoni pizza 20cm</span><span class="item-gourmet__price">$
+                            23.88</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Peperoni pizza 35cm</span><span class="item-gourmet__price">$
+                            26.68</span>
+                        </div>
+                      </div>
+
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Meat pizza 20cm</span><span class="item-gourmet__price">$
+                            36.36</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Meat pizza 35cm</span><span class="item-gourmet__price">$
+                            39.16</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Mushrooms pizza 20cm</span><span
+                            class="item-gourmet__price">$ 23.40</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Mushrooms pizza 35cm</span><span
+                            class="item-gourmet__price">$ 26.20</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Barbecue pizza 20cm</span><span class="item-gourmet__price">$
+                            28.92</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Barbecue pizza 35cm</span><span class="item-gourmet__price">$
+                            31.72</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Carbonara pizza 20cm</span><span
+                            class="item-gourmet__price">$ 28.14</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Carbonara pizza 35cm</span><span
+                            class="item-gourmet__price">$ 30.94</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Cheese pizza 20cm</span><span class="item-gourmet__price">$
+                            24.48</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Cheese pizza 35cm</span><span
+                            class="item-gourmet__price">$27.28</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Chicken pizza 20cm</span><span class="item-gourmet__price">$
+                            24.18</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+
+                    <li class="item-gourmet__item">
+                      <div class="item-gourmet__header">
+                        <div class="item-gourmet__wrapper">
+                          <span class="item-gourmet__name">Chicken pizza 35cm</span><span class="item-gourmet__price">$
+                            26.98</span>
+                        </div>
+                      </div>
+                      <p class="item-gourmet__text">
+                        Pizza comes with all tapping that you describe in this
+                        section
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="menu__gourment-btn__wrapper">
+                  <button class="menu__gourmet-btn" type="button">
+                    Explore more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__big-bird big-bird">
+        <div class="big-bird__container">
+          <div class="big-bird__body">
+            <div class="big-bird__column image-column">
+              <div class="image-column__item">
+                <h2 class="image-column__title">
+                  <span class="image-column__titlePart-one">Pizza</span><span class="image-column__titlePart-two">
+                    Of The Month</span>
+                </h2>
+                <p class="image-column__subtitle">
+                  <span class="image-column__subtitlePart-one">The Big</span><span
+                    class="image-column__subtitlePart-two"> BIRD</span>
+                </p>
+                <div class="image-column__img">
+                  <div class="img-pizzaTaking">
+                    <img src="./images/background__night/big_bird/pictures/hands-taking-pizza.png"
+                      alt="hands-taking-pizza" width="851" height="771" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="big-bird__column list-column">
+              <div class="list-column__item">
+                <ul class="list-column__list list-items">
+                  <li class="list-items__item">Pepperoni Pizza</li>
+                  <li class="list-items__item">Meat Pizza</li>
+                  <li class="list-items__item">Mushrooms Pizza</li>
+                  <li class="list-items__item">Barbeque Pizza</li>
+                  <li class="list-items__item">Carbonara Pizza</li>
+                  <li class="list-items__item">Cheese Pizza</li>
+                  <li class="list-items__item">Chicken Pizza</li>
+                </ul>
+                <div class="list-column__buttons">
+                  <button class="order-online__btn" type="button">
+                    Order online now
+                  </button>
+                  >
+                  <button class="our-menu__btn" type="button">
+                    See our menu
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="reservation" class="page__reservation reservation">
+        <div class="reservation__wrapper container-max">
+          <div class="reservation__body">
+            <div class="reservation__form">
+              <p class="reservation__form-terms">
+                *Terms & Conditions Applied .
+              </p>
+              <form class="reservation__form-form booking-form" action="">
+                <div class="booking-form__header">
+                  <h1 class="booking-form__title">Reservation</h1>
+                  <div class="booking-form__subtitle">
+                    Book online or give us a call on +91 1111 222 333
+                  </div>
+                  <div class="booking-form__text">
+                    Between 9:30 am - 10:00 pm
+                  </div>
+                </div>
+                <div class="booking-form__inputData inputItems">
+                  <div class="inputBlock__item">
+                    <label for="">Name</label>
+                    <input class="inputBlock__name" type="text" />
+                  </div>
+                  <div class="inputBlock__item">
+                    <label for="">E-Mail</label>
+                    <input class="inputBlock__email" type="text" />
+                  </div>
+                  <div class="inputBlock__item">
+                    <label for="">People Number</label>
+                    <input class="inputBlock__phone" type="number" />
+                  </div>
+                  <div class="inputBlock__item">
+                    <label for="">Date & Time</label>
+                    <input class="inputBlock__dateTime" type="datetime" />
+                  </div>
+                </div>
+                <button class="booking-form_btn" type="button">
+                  Send Mail
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__pizza-icons pizza-icons">
+        <div class="pizza-icons__wrapper container-max">
+          <div class="pizza-icons__container">
+            <div class="pizza-icons__header">
+              <a href="#" class="pizza-icons__header-logo header__logo">
+                <img class="pizza-icons__logo-iconDark hidden"
+                  src="./images/background__night/home/icons/Pizza Slice.svg" alt="Pizza slice" width="46"
+                  height="46" />
+                <img class="pizza-icons__logo-iconLight hidden"
+                  src="./images/background__day/pizza-order/icons/Pizza_Slice.svg" alt="Pizza slice" width="46"
+                  height="46" />
+                <span class="pizza-icons__logo-name header__logo-name">mania</span>
+              </a>
+              <div class="pizza-icons__icons icons-block">
+                <div class="icons-block__item">
+                  <a class="icons-block__icon" href="#">
+                    <img src="./images/background__night/pizza-order/icons/question.svg" alt="question" />
+                    <span class="icons-block__text">Help</span>
+                  </a>
+                </div>
+
+                <div class="icons-block__items">
+                  <div class="icons-block__item">
+                    <a class="icons-block__icon" href="#">
+                      <img src="./images/background__night/pizza-order/icons/user.svg" alt="user" />
+                      <span class="icons-block__text">Sign In</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__order order">
+        <div class="order__wrapper container-max">
+          <div class="order__body">
+            <div class="order__contact contact-data">
+              <div class="contact-data__body">
+                <div class="contact-data__account account contact-data__info">
+                  <img class="account__img-usersDark hidden"
+                    src="./images/background__night/pizza-order/icons/users.svg" alt="users" width="70" height="70" />
+                  <img class="account__img-usersLight hidden" src="./images/background__day/pizza-order/icons/users.svg"
+                    alt="users" width="70" height="70" />
+                  <h2 class="account__title">Account</h2>
+                  <p class="account__subtitle">
+                    To place your order now, log in to your existing account
+                    or sign up.
+                  </p>
+                  <div class="account__btn">
+                    <button class="account__btn-btn" type="button">
+                      Have an account ?<br />
+                      <a class="account__btn-link" href="#">Log in</a>
+                    </button>
+                    <button class="account__btn-btn" type="button">
+                      New to Mania ?<br />
+                      <a class="account__btn-link" href="#">Sign in</a>
+                    </button>
+                  </div>
+                </div>
+                <div class="contact-data__delivery delivery contact-data__info">
+                  <img class="delivery__img-deliveryDark hidden"
+                    src="./images/background__night/pizza-order/icons/delivery.svg" alt="delivery" width="70"
+                    height="70" />
+
+                  <img class="delivery__img-deliveryLight hidden"
+                    src="./images/background__day/pizza-order/icons/delivery.svg" alt="delivery" width="70"
+                    height="70" />
+                  <h3 class="delivery__title">Delivery address</h3>
+                </div>
+                <div class="contact-data__payment payment contact-data__info">
+                  <img class="payment__img-paymentDark hidden"
+                    src="./images/background__night/pizza-order/icons/payment.svg" alt="payment" width="70"
+                    height="70" />
+                  <img class="payment__img-paymentLight hidden"
+                    src="./images/background__day/pizza-order/icons/payment.svg" alt="payment" width="70" height="70" />
+                  <h4 class="payment__title">Payment</h4>
+                </div>
+              </div>
+            </div>
+            <div class="order__bill">
+              <div class="order__bill-body bill-body">
+                <div class="bill-body__header bill__header">
+                  <div class="bill__header-img">
+                    <img src="./images/background__night/pizza-order/pictures/pizza.png" alt="pizza" width="119"
+                      height="119" />
+                  </div>
+                  <div class="bill__header-content header-content">
+                    <h5 class="header-content__title">Wow ! Pizza</h5>
+                    <p class="header-content__subtitle">
+                      delivered to this location
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bill-body__order-choice order-choice">
+                  <div class="order-choice__coupon coupon-data">
+                    <span class="coupon-data__coupon-text">Apply your coupon code
+                    </span>
+                    <label class="coupon-data__coupon-text" for="">#</label>
+                    <input class="coupon-data__coupon-code" type="text" placeholder="xxxx-xxxx" />
+                  </div>
+
+                  <div class="order-choice__item item-choosen">
+                    <div class="item-choosen__wrapper">
+                      <div class="item-choosen__item-data">
+                        <select class="item-choosen__item-name" name="select"></select>
+
+                        <br />
+                        <span class="item-choosen__customize-type customize">Customize</span>
+                        <span class="item-choosen__sign customize">&gt;</span>
+                      </div>
+
+                      <div class="order-choice__quantity-selector quantity-selector">
+                        <div class="quantity-selector__column">
+                          <div class="quantity-selector__item">
+                            <img class="quantity-selector__minusDark quantity-selector__minus hidden"
+                              src="./images/background__night/pizza-order/icons/icon_minus.svg" alt="minus" width="16"
+                              height="4" />
+                            <img class="quantity-selector__minusLight quantity-selector__minus hidden"
+                              src="./images/background__day/pizza-order/icons/icon_minus.svg" alt="minus" width="16"
+                              height="4" />
+                          </div>
+                        </div>
+                        <div class="quantity-selector__column">
+                          <div class="quantity-selector__item">
+                            <span class="quantity-selector__number">1</span>
+                          </div>
+                        </div>
+                        <div class="quantity-selector__column">
+                          <div class="quantity-selector__item">
+                            <img class="quantity-selector__plusDark quantity-selector__plus hidden"
+                              src="./images/background__night/pizza-order/icons/icon_plus.svg" alt="plus" width="12"
+                              height="12" />
+                            <img class="quantity-selector__plusLight quantity-selector__plus hidden"
+                              src="./images/background__day/pizza-order/icons/icon_plus.svg" alt="plus" width="12"
+                              height="12" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="order-choice__price">
+                        <span class="order-choice__price-total"></span>
+                        <span class="order-choice__price-discount"></span>
+                      </div>
+                    </div>
+                    <div class="customize-pizza">
+                      <div class="customize-pizza__select"></div>
+                    </div>
+                    <div class="bill-body__order">
+                      <button class="addItems-btn" type="button">
+                        Add to order
+                      </button>
+                      <a href="#popup">
+                        <button class="reviewItems-btn" type="button">
+                          Review order
+                        </button></a>
+                      <button class="clearItems-btn" type="button">
+                        Clear order
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="bill-body__messages">
+                    <span>"Any massage to your Loving one ? "</span>
+                  </div>
+                </div>
+
+                <div class="bill-body__bill-details bill-details">
+                  <div class="bill-details__header">Bill Details</div>
+                  <div class="bill-details__info">
+                    <div class="bill-details__itemTotal itemTotal-info">
+                      <span class="itemTotal-info__text">Item Total</span>
+                      <span class="itemTotal-info__price">$0.00</span>
+                    </div>
+
+                    <div class="bill-details__fee fee-info">
+                      <span class="fee-info__text">Delivery Partner Fee</span>
+                      <span class="fee-info__price"></span>
+                      <span class="fee-info__type">FREE</span>
+                    </div>
+
+                    <div class="bill-details__discount-line bill-details__line"></div>
+
+                    <div class="bill-details__discount discount-info">
+                      <span class="discount-info__text">Item Discount</span>
+                      <span class="discount-info__price">$0.00</span>
+                    </div>
+
+                    <div class="bill-details__discount-line bill-details__line"></div>
+
+                    <div class="bill-details__taxes taxes-info">
+                      <span class="taxes-info__text">Taxes and Charges</span>
+                      <span class="taxes-info__price">$0.00</span>
+                    </div>
+
+                    <div class="bill-details__payment-line bill-details__line"></div>
+
+                    <div class="bill-details__payment payment-info">
+                      <span class="payment-info__text">To Pay</span>
+                      <span class="payment-info__price">$0.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="popup" class="popup">
+    <a href="#header" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#header" class="popup__close">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+        <div class="popup__title">Order details</div>
+        <div class="popup__details"></div>
+      </div>
+    </div>
+  </div>
+
+  <template id="table-th__template">
+    <th>Check</th>
+    <th>Item name</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    <th>Total price</th>
+    <th>Discount</th>
+  </template>
+
+  <template id="table-tr__template">
+    <tr>
+      <td><input type="checkbox" /></td>
+      <td>{{name}}</td>
+      <td>{{quantity}}</td>
+      <td>{{price}}</td>
+      <td>{{totalPrice}}</td>
+      <td>{{discount}}</td>
+    </tr>
+  </template>
+
+  <script src="./js/mustache.min.js"></script>
+
+  <script src="./js/header.js"></script>
+  <script src="./js/family.js"></script>
+  <script src="./js/reservation.js"></script>
+  <script src="./js/order.js"></script>
+</body>
+
+</html>
