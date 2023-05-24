@@ -344,10 +344,10 @@ function updateOrderSumma() {
 
 // ===================== bill details =================================
 function setBillDetails() {
-  let sumTotal = 0;
-  let discountTotal = 0;
-  let taxTotal = 0;
-  let payTotal = 0;
+  let sumTotal = 0,
+    discountTotal = 0,
+    taxTotal = 0,
+    payTotal = 0;
 
   itemsOrder.forEach((element) => {
     sumTotal += element.totalPrice;
