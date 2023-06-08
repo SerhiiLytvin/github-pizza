@@ -104,6 +104,8 @@ function backgroundChange(e) {
     plusDarkSign.classList.add("hidden");
     plusLightSign.classList.remove("hidden");
 
+    localStorage.setItem('htmlBlock', "light");
+
     return;
   }
 
@@ -137,6 +139,8 @@ function backgroundChange(e) {
 
     plusDarkSign.classList.remove("hidden");
     plusLightSign.classList.add("hidden");
+
+    localStorage.setItem('htmlBlock', "dark");
 
     return;
   }
