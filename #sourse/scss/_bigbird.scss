@@ -1,0 +1,31 @@
+/* =========== BIG-BIRD ==========*/
+
+.big-bird__container {
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position-x: 68%;
+}
+
+html {
+   &.dark {
+      .big-bird__container {
+         background-image: url(../images/background__night/big_bird/pictures/line.png);
+     }
+   }
+
+   &.light {
+      .big-bird__container {
+         background-image: url(../images/background__day/big_bird/pictures/line.png);
+     }
+     
+   }
+}
+
+.big-bird__body {
+   display:flex;
+   flex-wrap: wrap;
+}
+
+.big-bird__column {
+   flex: 1 1 50%;
+}

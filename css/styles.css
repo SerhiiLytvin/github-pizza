@@ -479,6 +479,13 @@ html.dark .item-gourmet__header {
 html.dark .item-gourmet__price {
   color: #FFDDC8;
 }
+html.dark .item-gourmet__text {
+  color: #FFDDC8;
+}
+html.dark .menu__gourmet-btn {
+  color: #FFDDC8;
+  background-color: #FF8C42;
+}
 html.light .gourmet-items__header {
   color: #7B3000;
 }
@@ -487,6 +494,13 @@ html.light .item-gourmet__header {
 }
 html.light .item-gourmet__price {
   color: #7B3000;
+}
+html.light .item-gourmet__text {
+  color: #7B3000;
+}
+html.light .menu__gourmet-btn {
+  color: #FFFFFF;
+  background-color: #FF5B00;
 }
 
 .item-gourmet__item {
@@ -525,3 +539,362 @@ html.light .item-gourmet__price {
   line-height: 138%;
   max-width: 346px;
 }
+
+.menu__gourment-btn__wrapper {
+  height: 133px;
+  padding-left: 30%;
+}
+
+.menu__gourmet-link {
+  display: block;
+}
+
+.menu__gourmet-btn {
+  font-family: "Kosugi", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 100%;
+  padding: 20px 50px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+/* =========== BIG-BIRD ==========*/
+.big-bird__container {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 68%;
+}
+
+html.dark .big-bird__container {
+  background-image: url(../images/background__night/big_bird/pictures/line.png);
+}
+html.light .big-bird__container {
+  background-image: url(../images/background__day/big_bird/pictures/line.png);
+}
+
+.big-bird__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.big-bird__column {
+  flex: 1 1 50%;
+}
+
+/* =========== IMAGE ==========*/
+.image-column__item {
+  padding-top: 132px;
+}
+
+.image-column__title {
+  padding: 7px 0px;
+  margin: 9px 0px;
+}
+
+.image-column__subtitle {
+  margin: 0px 0px 26px 0px;
+}
+
+.image-column__title,
+.image-column__subtitle {
+  font-family: "Quicksand", cursive;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+html.dark .image-column__titlePart-one {
+  color: #FF8C42;
+}
+html.dark .image-column__titlePart-two {
+  color: #FFF;
+}
+html.dark .image-column__subtitlePart-one {
+  color: #fff;
+}
+html.dark .image-column__subtitlePart-two {
+  color: #FF8C42;
+}
+html.dark .list-items__item {
+  color: #FFDDC8;
+}
+html.dark .list-column__buttons button {
+  background-color: #FF8C42;
+}
+html.light .image-column__titlePart-one {
+  color: #FF5B00;
+}
+html.light .image-column__titlePart-two {
+  color: #7B3000;
+}
+html.light .image-column__subtitlePart-one {
+  color: #7B3000;
+}
+html.light .image-column__subtitlePart-two {
+  color: #FF5B00;
+}
+html.light .list-items__item {
+  color: #7B3000;
+}
+html.light .list-column__buttons button {
+  background-color: #FF5B00;
+}
+
+.image-column__subtitlePart-two {
+  font-size: 96px;
+}
+
+.img-pizzaTaking {
+  margin-left: -90px;
+}
+
+.img-pizzaTaking img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.list-column__item {
+  padding: 293px 0px 0px 0px;
+}
+
+.list-column__list {
+  margin-bottom: 171px;
+}
+
+.list-items__item {
+  font-family: "Quicksand", cursive;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1;
+  list-style-type: disc;
+}
+.list-items__item:not(:last-child) {
+  margin: 0px 0px 38px 0px;
+}
+.list-items__item:nth-child(1) {
+  margin-left: 400px;
+}
+.list-items__item:nth-child(2) {
+  margin-left: 364px;
+}
+.list-items__item:nth-child(3) {
+  margin-left: 328px;
+}
+.list-items__item:nth-child(4) {
+  margin-left: 291px;
+}
+.list-items__item:nth-child(5) {
+  margin-left: 255px;
+}
+.list-items__item:nth-child(6) {
+  margin-left: 219px;
+}
+.list-items__item:nth-child(7) {
+  margin-left: 185px;
+}
+
+.list-column__buttons {
+  margin-left: 171px;
+}
+.list-column__buttons .order-online__btn {
+  margin-right: 113px;
+}
+.list-column__buttons button {
+  font-family: "Quicksand", cursive;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  color: #FFF;
+  width: 201px;
+  height: 60px;
+  text-transform: capitalize;
+}
+
+/* =========== RESERVATION ==========*/
+.page__reservation {
+  padding-top: 145px;
+}
+
+html.dark .reservation__body {
+  background-image: url(../images/background__night/reservation/pictures/spoon_and_bank.png), url(../images/background__night/reservation/pictures/red_pepper.png), url("../images/background__night/reservation/pictures/spoon_and_pepper.png"), url("../images/background__night/reservation/pictures/cabage_leaf.png");
+  background-repeat: no-repeat;
+  background-position: 0px 37px, 42% 0px, 28% 100%, 100% 100%;
+  background-size: auto auto, auto auto, auto auto auto auto;
+}
+html.dark .reservation__form-terms {
+  color: #FFFFFF;
+}
+html.dark .reservation__form-form {
+  border-style: solid;
+  border-top-width: 3px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 3px;
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+html.dark .booking-form__title {
+  color: #DDDDDD;
+}
+html.dark .booking-form__subtitle {
+  color: #FFFFFF;
+}
+html.dark .booking-form__text {
+  color: #FFFFFF;
+}
+html.dark .inputBlock__item {
+  color: #FFFFFF;
+}
+html.dark .inputBlock__item input {
+  border-bottom: 2px dashed #FFF;
+  color: #FFFFFF;
+}
+html.dark .booking-form_btn {
+  color: #FFFFFF;
+  background-color: #FF8C42;
+}
+html.light .reservation__body {
+  background-image: url(../images/background__day/reservation/pictures/spoon_and_bank.png), url(../images/background__day/reservation/pictures/red_pepper.png), url("../images/background__day/reservation/pictures/spoon_and_pepper.png"), url("../images/background__night/reservation/pictures/cabage_leaf.png");
+  background-repeat: no-repeat;
+  background-position: 0px 37px, 37% 0px, 28% 100%, 100% 100%;
+  background-size: auto auto, auto auto, auto auto auto auto;
+}
+html.light .reservation__form-terms {
+  color: #151515;
+}
+html.light .reservation__form-form {
+  background-color: rgba(217, 217, 217, 0.59);
+  box-shadow: 10px 19px 30px rgba(0, 0, 0, 0.25);
+}
+html.light .booking-form__title {
+  color: #FF5B00;
+}
+html.light .booking-form__subtitle {
+  color: #151515;
+}
+html.light .booking-form__text {
+  color: #151515;
+}
+html.light .inputBlock__item {
+  color: #151515;
+}
+html.light .inputBlock__item input {
+  border-bottom: 2px dashed #151515;
+  color: #151515;
+}
+html.light .booking-form_btn {
+  color: #151515;
+  background-color: #FF5B00;
+}
+
+.reservation__form {
+  margin-left: 55%;
+  width: 626px;
+  padding-bottom: 76px;
+}
+
+.reservation__form-terms {
+  font-family: "Quicksand", cursive;
+  font-size: 21px;
+  line-height: 1;
+  padding: 19px 2px 32px 0px;
+  text-align: end;
+}
+
+.reservation__form-form {
+  border-radius: 10px;
+}
+
+.booking-form {
+  padding: 38px 0px 224px 0px;
+}
+
+.booking-form__title {
+  font-family: "Quicksand", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+
+.booking-form__subtitle {
+  font-family: "Quicksand", cursive;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 17px;
+  text-transform: capitalize;
+}
+
+.booking-form__text {
+  font-family: "Quicksand", cursive;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 214px;
+}
+
+.inputItems {
+  padding: 0px 123px 0px 79px;
+}
+
+.inputBlock__item {
+  font-family: "Quicksand", cursive;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1;
+  width: 424px;
+  display: flex;
+  justify-content: space-between;
+}
+.inputBlock__item input {
+  font-size: 20px;
+  display: block;
+  background-color: transparent;
+}
+.inputBlock__item:not(:last-child) {
+  margin: 0px 0px 50px 0px;
+}
+.inputBlock__item:last-child {
+  margin: 0px 0px 76px 0px;
+}
+.inputBlock__item label {
+  display: block;
+}
+.inputBlock__item:nth-child(1) input {
+  width: 324px;
+}
+.inputBlock__item:nth-child(2) input {
+  width: 342px;
+}
+.inputBlock__item:nth-child(3) input {
+  width: 250px;
+}
+.inputBlock__item::nth-child(4) input {
+  width: 280px;
+}
+
+.booking-form_btn {
+  font-family: "Quicksand", cursive;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-left: 34%;
+}
+
+/* =========== PIZZA ICONS  ==========*/

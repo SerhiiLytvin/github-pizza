@@ -1,0 +1,218 @@
+/* =========== RESERVATION ==========*/
+
+.page__reservation {
+   padding-top: 145px;
+}
+
+html {
+   &.dark {
+      .reservation__body {
+         background-image: url(../images/background__night/reservation/pictures/spoon_and_bank.png),
+         url(../images/background__night/reservation/pictures/red_pepper.png),
+         url('../images/background__night/reservation/pictures/spoon_and_pepper.png'),
+         url('../images/background__night/reservation/pictures/cabage_leaf.png');
+         background-repeat: no-repeat;
+         background-position: 0px 37px, 42% 0px, 28% 100%, 100% 100%;
+         background-size: auto auto, auto auto, auto auto auto auto;
+      }
+
+      .reservation__form-terms {
+         color: #FFFFFF;
+      }
+
+      .reservation__form-form {
+         border-style: solid;
+         border-top-width: 3px;
+         border-right-width: 1px;
+         border-bottom-width: 1px;
+         border-left-width: 3px;
+         border-color: rgba(255, 255, 255, 0.5);
+         background-color: rgba(255, 255, 255, 0.05);
+      }
+
+      .booking-form__title {
+         color: #DDDDDD;
+      }
+
+      .booking-form__subtitle {
+         color: #FFFFFF;
+      }
+
+      .booking-form__text {
+         color: #FFFFFF;
+      }
+
+      .inputBlock__item {
+         color: #FFFFFF;
+
+         input {
+            border-bottom: 2px dashed #FFF;
+            color: #FFFFFF;
+         }
+      }
+
+      .booking-form_btn {
+         color: #FFFFFF;
+         background-color: #FF8C42;
+      }
+   }
+
+   &.light {
+      .reservation__body {
+         background-image: url(../images/background__day/reservation/pictures/spoon_and_bank.png),
+         url(../images/background__day/reservation/pictures/red_pepper.png),
+         url('../images/background__day/reservation/pictures/spoon_and_pepper.png'),
+         url('../images/background__night/reservation/pictures/cabage_leaf.png');
+         background-repeat: no-repeat;
+         background-position: 0px 37px, 37% 0px, 28% 100%, 100% 100%;
+         background-size: auto auto, auto auto, auto auto auto auto;
+      }
+      
+      .reservation__form-terms {
+         color: #151515;
+      }
+
+      .reservation__form-form {
+         background-color: rgba(217, 217, 217, 0.59);
+         box-shadow: 10px 19px 30px rgba(0, 0, 0, 0.25);    
+      }
+
+      .booking-form__title {
+         color: #FF5B00;
+      }
+
+      .booking-form__subtitle {
+         color: #151515;
+      }
+
+      .booking-form__text {
+         color: #151515;
+      }
+
+      .inputBlock__item {
+         color: #151515;
+
+         input {
+            border-bottom: 2px dashed #151515;
+            color: #151515;
+         }
+      }
+
+      .booking-form_btn {
+         color: #151515;
+         background-color: #FF5B00;
+      }
+   }
+}
+
+.reservation__form {
+   margin-left: 55%;
+   width: 626px;
+   padding-bottom: 76px;
+}
+
+.reservation__form-terms {
+   font-family: 'Quicksand', cursive;
+   font-size: 21px;
+   line-height: 1;
+   padding: 19px 2px 32px 0px;
+   text-align: end;
+}
+
+.reservation__form-form {
+   border-radius: 10px;    
+}
+
+.booking-form {
+   padding: 38px 0px 224px 0px;
+}
+
+.booking-form__title {
+   font-family: 'Quicksand', cursive;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 1;
+   letter-spacing: 2px;
+   text-align: center;
+   margin-bottom: 17px;
+   text-transform: uppercase;
+}
+
+.booking-form__subtitle {
+   font-family: 'Quicksand', cursive;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1;
+   text-align: center;
+   margin-bottom: 17px;
+   text-transform: capitalize;
+}   
+
+.booking-form__text {
+   font-family: 'Quicksand', cursive;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1;
+   text-align: center;
+   margin-bottom: 214px;
+}
+
+
+.inputItems {
+   padding: 0px 123px 0px 79px;
+}
+
+.inputBlock__item {
+   font-family: 'Quicksand', cursive;
+   font-weight: 600;
+   font-size: 21px;
+   line-height: 1;
+   width: 424px;
+   display: flex;
+   justify-content: space-between;
+
+   input {
+      font-size: 20px;
+      display: block;
+      background-color: transparent;
+   }
+
+   &:not(:last-child) {
+      margin: 0px 0px 50px 0px;
+   }
+
+   &:last-child {
+      margin: 0px 0px 76px 0px;
+   }
+
+   label {
+      display: block;
+   }
+
+   &:nth-child(1) input{
+      width: 324px;
+  }
+
+  &:nth-child(2) input {
+   width: 342px;
+  }
+
+  &:nth-child(3) input {
+   width: 250px;
+  }
+
+  &::nth-child(4) input {
+   width: 280px;
+  }
+}
+
+.booking-form_btn {
+   font-family: 'Quicksand', cursive;
+   font-weight: 600;
+   font-size: 21px;
+   line-height: 1;
+   padding: 10px 30px;
+   border-radius: 5px;
+   margin-left: 34%;
+}
+

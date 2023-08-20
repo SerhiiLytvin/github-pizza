@@ -23,6 +23,15 @@ html {
       .item-gourmet__price {
          color: #FFDDC8;
       }
+
+      .item-gourmet__text {
+         color: #FFDDC8;
+      }
+
+      .menu__gourmet-btn {
+         color: #FFDDC8;
+         background-color: #FF8C42;
+      }
    }
    &.light {
       .gourmet-items__header {
@@ -35,6 +44,15 @@ html {
 
       .item-gourmet__price {
          color: #7B3000;
+      }
+
+      .item-gourmet__text {
+         color: #7B3000;
+      }
+
+      .menu__gourmet-btn {
+         color: #FFFFFF;
+         background-color: #FF5B00;
       }
    }
 }
@@ -80,5 +98,26 @@ html {
    font-size: 20px;
    line-height: 138%;
    max-width: 346px;
+}
+
+.menu__gourment-btn__wrapper {
+   height: 133px;
+   padding-left: 30%;
+}
+
+.menu__gourmet-link {
+   display: block;
+}
+
+.menu__gourmet-btn {
+   font-family: 'Kosugi', Arial,
+       Helvetica,
+       sans-serif;
+   font-style: normal;
+   font-size: 24px;
+   line-height: 100%;
+   padding: 20px 50px;
+   border-radius: 5px;
+   text-transform: capitalize;
 }
 
