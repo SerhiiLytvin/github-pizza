@@ -1,0 +1,63 @@
+/* =========== HEADER ==========*/
+.header {
+   /* position: absolute; */
+   position: fixed;
+   width: 100%;
+   left: 0px;
+   top: 0px;
+   z-index: 1000;
+}
+
+html {
+   &.dark {
+      header {
+         background-color: #151515;
+      }
+
+      .header__logo-name {
+         color: #FF8C42;
+      }
+   
+   }
+
+   &.light {
+      header {
+         background-color: #f4f4f4;
+      }
+
+      .header__logo-name {
+         color: #FF5B00;
+      };
+   
+   }
+}
+
+.header__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 145px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+}
+
+.header__logo {
+   display: block;
+}
+
+.header__logo-dark {
+   display: inline-block;
+   margin: 0px 6px 0px 0px;
+}
+
+.header__logo-light {
+   display: inline-block;
+   margin: 0px 6px 0px 0px;
+}
+
+.header__logo-name {
+   display: inline-block;
+   font-weight: 600;
+   font-size: 48px;
+}

@@ -1,0 +1,84 @@
+/* =========== GOURMET ==========*/
+
+.gourmet-items__header {
+   font-family: 'Kosugi', Arial,
+           Helvetica,
+           sans-serif;
+   font-style: normal;
+   font-size: 44px;
+   line-height: 100%;
+   margin: 0px 0px 73px 0px;
+}
+
+html {
+   &.dark {
+      .gourmet-items__header {
+         color: #FFDDC8;
+      }
+
+      .item-gourmet__header {
+         color: #FFDDC8;
+      }
+
+      .item-gourmet__price {
+         color: #FFDDC8;
+      }
+   }
+   &.light {
+      .gourmet-items__header {
+         color: #7B3000;
+      }
+      
+      .item-gourmet__header {
+         color: #7B3000;
+      }
+
+      .item-gourmet__price {
+         color: #7B3000;
+      }
+   }
+}
+
+.item-gourmet__item {
+   margin: 0px 0px 44px 0px;
+}
+
+.item-gourmet__header {
+   font-family: 'Kosugi', Arial,
+       Helvetica,
+       sans-serif;
+   font-style: normal;
+   font-size: 36px;
+   line-height: 100%; 
+   padding-left: 18px;
+}
+
+.item-gourmet__name {
+   margin: 0px 0px 22px 0px;
+}
+
+.item-gourmet__wrapper {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.item-gourmet__price {
+   font-family: 'Kosugi', Arial,
+           Helvetica,
+           sans-serif;
+   font-style: normal;
+   font-size: 36px;
+   line-height: 100%;
+}
+
+.item-gourmet__text {
+   font-family: 'Kosugi', Arial,
+       Helvetica,
+       sans-serif;
+   font-style: normal;
+   font-size: 20px;
+   line-height: 138%;
+   max-width: 346px;
+}
+

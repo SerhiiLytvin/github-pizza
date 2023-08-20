@@ -1,0 +1,43 @@
+/* =========== MENU ==========*/
+
+.menu__list {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 3px;
+}
+
+.menu__item {
+   text-align: center;
+
+   &:not(:last-child) {
+      margin: 0px 45px 0px 0px;
+  }
+}
+
+html {
+   &.dark {
+      .menu__link {
+         color: #FF8C42;
+     }
+   }
+
+   &.light {
+      .menu__link {
+         color: #FF5B00;
+     }
+   }
+}
+
+.menu__link {
+   font-family: 'Quicksand';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 26px;
+
+   &:hover {
+      text-decoration: underline;
+  }
+}
+
+
+

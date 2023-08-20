@@ -353,7 +353,7 @@ html.light .family__btn-link {
     right: 18px;
 }
 
-/* =========== MENU ==========*/
+/* =========== PRICELIST ==========*/
 .menu {
     padding-top: 145px;
 }
@@ -576,7 +576,7 @@ html.light .item-gourmet__price {
     max-width: 346px;
 }
 
-html.dark .item-gourmet__text {
+html.dark .item-gourmet__text { <-----
     color: #FFDDC8;
 }
 
