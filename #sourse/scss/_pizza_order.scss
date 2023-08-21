@@ -1,0 +1,761 @@
+/* =========== PIZZA ORDER  ==========*/
+
+.order__body {
+   background-image: url(../images/background__night/pizza-order/pictures/Pizza-slice.png);
+   background-repeat: no-repeat;
+   background-size: auto;
+   background-position: 100% 100%;
+
+   padding: 89px 0px 87px 95px;
+   display: flex;
+}
+
+.order__contact {
+   width: 55%;
+}
+
+.contact-data__account {
+   padding: 14px 0px 28px 55px;
+}
+
+.contact-data__info {   
+   position: relative;
+}
+
+html {
+   &.dark {
+      .contact-data__info {
+         border-radius: 5px;
+         background-color: rgba(255, 255, 255, 0.2);
+         border-top: 2px solid rgba(255, 255, 255, 0.4);
+         border-left: 2px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .account__title {
+         color: rgba(255, 255, 255, 0.96);
+      }
+
+      .account__subtitle {
+         color: rgba(255, 255, 255, 0.96);
+      }
+
+      .account__btn-btn {
+         color: #FFFFFF;
+         border: 1px solid #FF8C42;
+      }
+
+      .account__btn-link {
+         color: #FF8C42;
+      }
+
+      .delivery__title {
+         color: #FFFFFF;
+      }
+
+      .payment__title {
+         color: #FFFFFF;
+      }
+
+      .order__bill-body {
+         border-radius: 5px;
+         background-color: rgba(255, 255, 255, 0.2);
+         border-top: 2px solid rgba(255, 255, 255, 0.4);
+         border-left: 2px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .header-content__title {
+         color: #FFFFFF;
+      }
+
+      .header-content__subtitle {
+         color: #FFFFFF;
+      }
+
+      .bill-body__order-choice {
+         border-left: 3px solid #FF8C42;
+      }
+
+      .coupon-data__coupon-text {
+         color: #FF8C42;
+      }
+
+      .coupon-data__coupon-code {
+         color:#FFFFFF;
+         background-color: inherit;
+      }
+     
+      .item-choosen__item-name {
+         color: #FF8C42;
+         background-color: inherit;
+      }
+
+      .item-choosen__customize-type {
+         color:  #FFFFFF;
+      }
+
+      .item-choosen__sign {
+         color: #FF8C42;
+      }
+
+      .customize-pizza__select {
+         color: #FF8C42;
+      }
+
+      .quantity-selector__number {
+         color: #019310;
+      }
+
+      .addItems-btn {
+         color: #FFFFFF;
+         background-color: #FF8C42;
+      }
+
+      .reviewItems-btn {
+         color: #FFFFFF;
+         background-color: #FF8C42;
+      }
+
+      .clearItems-btn {
+         color: #FFFFFF;
+         background-color: #FF8C42;
+      }
+
+      .bill-details__header {
+         color: #FF8C42;
+      }
+     
+      .bill-details__itemTotal {
+         color: #FFFFFF;
+      }
+
+      .itemTotal-info__text {
+         color: #FFFFFF;
+      }
+
+      .itemTotal-info__price {
+         color: #FFFFFF;
+      }
+
+      .fee-info__text {
+         color: #FFFFFF;
+      }
+
+      .fee-info__price {
+         color: #FFFFFF;
+      }
+
+      .fee-info__type {
+         color: #28F83D;
+      }
+
+      .bill-details__discount-line {
+         border: 2px solid #747474;
+      }
+
+      .discount-info__text {
+         color: #FFFFFF;
+      }
+
+      .discount-info__price {
+         color: #28F83D;
+      }
+
+      .taxes-info__text {
+         color: #FFFFFF;
+      }
+
+      .payment-info__text {
+         color: #F2F2F2;
+      }
+
+      .payment-info__price {
+         color: #FFFFFF;
+      }
+   }
+
+   &.light {
+      .contact-data__info {
+         border-radius: 10px;
+         background-color: rgba(217, 217, 217, 0.59);
+         box-shadow: 10px 19px 30px rgba(0, 0, 0, 0.25);
+      }
+
+      .account__title {
+         color: #1E1E1E;
+      }
+
+      .account__subtitle {
+         color: #1E1E1E;
+      }
+
+      .account__btn-btn {
+         color: #1E1E1E;
+         border: 1px solid #FF5B00;
+      }
+
+      .account__btn-link {
+         color: #FF5B00;
+      }
+
+      .delivery__title {
+         color: #1E1E1E;
+      }
+
+      .payment__title {
+         color: #1E1E1E;
+      }
+
+      .order__bill-body {
+         background-color: rgba(217, 217, 217, 0.59);
+         border-radius: 10px;
+         box-shadow: 10px 19px 30px rgba(0, 0, 0, 0.25);
+      }
+
+      .header-content__title {
+         color: #1E1E1E;
+      }
+
+      .header-content__subtitle {
+         color: #1E1E1E;
+      }
+
+      .bill-body__order-choice {
+         border-left: 3px solid #FF5B00;
+      }
+
+      .coupon-data__coupon-text {
+         color: #FF5B00;
+      }
+
+      .coupon-data__coupon-code {
+         color: #1E1E1E;
+         background-color: inherit;
+      }
+
+      .item-choosen__item-name {
+         color: #FF5B00;
+         background-color: inherit;
+      }
+
+      .item-choosen__customize-type {
+         color: #1E1E1E;
+      }
+
+      .item-choosen__sign {
+         color: #FF5B00;
+      }
+
+      .customize-pizza__select { 
+         color: #FF5B00;
+      }
+
+      .quantity-selector__number {
+         color: #3E5440;
+      }
+
+      .addItems-btn {
+         color: #151515;
+         background-color: #FF5B00;
+      }
+
+      .reviewItems-btn {
+         color: #151515;
+         background-color: #FF5B00;
+      }
+
+      .clearItems-btn {
+         color: #151515;
+         background-color: #FF5B00;
+      }
+
+      .bill-details__header {
+         color: #FF5B00;
+      }
+
+      .bill-details__itemTotal {
+         color: #1E1E1E;
+      }
+
+      .itemTotal-info__text {
+         color: #1E1E1E;
+      }
+
+      .itemTotal-info__price {
+         color: #1E1E1E
+      }
+
+      .fee-info__text {
+         color: #1E1E1E;
+      }
+
+      .fee-info__price {
+         color: 1E1E1E;
+      }
+
+      .fee-info__type {
+         color: #026F0D;
+      }
+
+      .bill-details__discount-line {
+         border: 1px solid rgba(0, 0, 0, 0.67);
+      }
+
+      .discount-info__text {
+         color: #1E1E1E;
+      }
+
+      .discount-info__price {
+         color: #026F0D;
+      }
+     
+      .taxes-info__text {
+         color: #1E1E1E;
+      }
+
+      .payment-info__text {
+         color: #232323;
+      }
+
+      .payment-info__price {
+         color: #1E1E1E;
+      }
+   }
+}
+
+.account {
+   margin-bottom: 90px;
+}
+
+.account__img-usersDark {
+   position: absolute;
+   top: 62px;
+   left: -50px;
+}
+
+.account__img-usersLight {
+   position: absolute;
+   top: 62px;
+   left: -50px;
+}
+
+.account__title {
+   font-size: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 60px;
+   margin-bottom: 7px;
+}
+
+.account__subtitle {
+   font-size: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;
+   margin-bottom: 32px;
+}
+
+.account__btn {
+   font-family: 'Quicksand', 'cursive';
+   display: flex;
+   justify-content: space-between;
+   width: 315px;
+}
+
+.account__btn-btn {     
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 15px;
+   background-color: inherit;
+   display: block;
+   width: 142px;
+   padding: 4px 0px;    
+   border-radius: 5px;
+}
+
+.account__btn-link {  
+   text-decoration: underline;
+}
+
+.contact-data__delivery {
+   padding: 28px 0px 28px 55px;
+}
+
+.delivery {
+   margin-bottom: 90px;
+}
+
+.delivery__img-deliveryDark {
+   position: absolute;
+   top: 12px;
+   left: 0px;
+   left: -50px;
+}
+
+.delivery__img-deliveryLight {
+   position: absolute;
+   top: 12px;
+   left: 0px;
+   left: -50px;
+}
+
+.delivery__title {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 40px;
+}
+
+.contact-data__payment {
+   padding: 28px 0px 28px 55px;
+}
+
+.payment__img-paymentDark {
+   position: absolute;
+   top: 12px;
+   left: -50px;
+}
+
+.payment__img-paymentLight {
+   position: absolute;
+   top: 12px;
+   left: -50px;
+}
+
+.payment__title {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 40px;
+}
+
+.order__bill {
+   width: 45%;
+}
+
+.order__bill-body {   
+   margin: 0px 0px 0px 100px;
+   width: 450px;
+}
+
+.bill-body {
+   padding: 25px 0px 121px 26px;
+}
+
+.bill-body__header {
+   display: flex;
+   margin-bottom: 54px;
+}
+
+.bill__header-content {
+   padding: 21px 0px 0px 15px;
+}
+
+.header-content__title {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 40px;
+   margin-bottom: 12px;
+}
+
+.header-content__subtitle {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;
+}
+
+.bill-body__order-choice {
+   padding-left: 11px;
+   margin-bottom: 69px;
+}
+
+.coupon-data {
+   margin-bottom: 27px;
+}
+
+.coupon-data__coupon-text {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;    
+}
+
+.coupon-data__coupon-code {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 16px;
+}
+
+.order-choice__item {
+   margin-bottom: 28px;
+}
+
+.item-choosen__wrapper {
+   display: flex;
+}
+
+.customize {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 20px;
+}
+
+.item-choosen__item-name {
+   display: inline-block;
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 16px;
+   margin: 0px 24px 0px 0px;
+   cursor: pointer;
+}
+
+.item-choosen__customize-type {       
+   margin-left: 43px;
+   cursor: pointer;
+}
+
+.customize {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 600;
+   font-size: 10px;
+   display: inline-block;
+}
+
+.item-choosen__sign {
+   cursor: pointer;
+}
+
+.customize-pizza .hidden{
+   display: none;
+}
+
+.customize-pizza__select {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+
+.order-choice__quantity-selector {
+   width: 97px;
+   height: 24px;
+   background-color: #D9D9D9;
+   border-radius: 5px;
+   display: inline-flex;
+   justify-content: space-between;
+}
+
+.quantity-selector {
+   margin-right: 29px;
+}
+
+.quantity-selector__item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width: 100% ;   
+}
+
+.quantity-selector__column:nth-child(1) {
+   width: 40%;
+}
+
+.quantity-selector__column:nth-child(2) {
+   padding: 0px 2px;
+   width: 20%;
+}
+
+.quantity-selector__column:nth-child(3) {
+   width: 40%;
+}
+
+.quantity-selector__minus {
+   display: inline-block;
+}
+
+.quantity-selector__plus {
+   display: inline-block;
+}
+
+.quantity-selector__number {
+   display: block;
+   text-align: center;
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;
+}
+
+.order-choice__price {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 13px;    
+   color: #FF4141;
+   display: flex;
+   flex-direction: column;
+}
+
+.order-choice__price-total {
+   display: inline-block;
+   /* text-decoration: line-through; */
+}
+
+.order-choice__price-discount {
+   display: inline-block;
+}
+
+.bill-body__order {
+   /* display:inline-block; */
+   margin-top: 5px;
+   display: flex;
+   justify-content: space-around;
+   /* margin-left: 78%; */
+
+   button {
+      padding: 5px 10px;
+      border-radius: 10px;
+      display:inline-block;
+   }
+}
+
+.bill-body__messages {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 15px;
+   Opacity: 70%;
+   color: #F461A8;
+}
+
+.bill-details__header {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 25px;
+   Opacity: 70%;
+   margin-bottom: 39px;
+}
+
+.bill-details__itemTotal {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 15px;
+}
+
+.itemTotal-info {
+   margin-bottom: 8px;
+}
+
+.itemTotal-info__text {
+   display: inline-block;
+   padding-right: 117px;
+}
+
+.itemTotal-info__price {
+   display: inline-block;
+}
+
+.bill-details__fee {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 500;   
+}
+
+.fee-info {
+   margin-bottom: 24px;
+}
+
+.fee-info__text {
+   display: inline-block;
+   font-size: 12px;
+   line-height: 15px;
+   padding-right: 51px;
+}
+
+.fee-info__price {
+   display: inline-block;
+   font-size: 8px;
+   line-height: 10px;
+   padding-right: 8px;
+}
+
+.fee-info__type {
+   display: inline-block;
+   font-size: 12px;
+   line-height: 15px;
+}
+
+.bill-details__discount-line {
+   margin-bottom: 22px;
+}
+
+.bill-details__line {
+   width: 226px;
+   height: 0px;
+   margin-left: 3px;
+}
+
+.bill-details__discount {
+  font-family: 'Quicksand', 'cursive';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.discount-info {
+   margin-bottom: 24px;
+}
+
+.discount-info__text {
+   display: inline-block;
+   padding-right: 115px;
+}
+
+.discount-info__price {
+   display: inline-block;
+}
+
+.taxes-info {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 15px;
+   margin-bottom: 23px;
+}
+
+.taxes-info__text {
+   display: inline-block;
+   padding-right: 81px;
+}
+
+.taxes-info__price {
+   display: inline-block;
+   color: #000000;
+}
+
+.bill-details__payment-line {
+   border: 2px solid #000000;
+   margin-bottom: 8px;
+}
+
+.payment-info {
+   font-family: 'Quicksand', 'cursive';
+   font-weight: 500;
+}
+
+.payment-info__text {
+   display: inline-block;
+   font-size: 12px;
+   line-height: 15px;
+   padding-right: 147px;
+}
+
+.payment-info__price {
+   display: inline-block;
+   font-size: 16px;
+   line-height: 20px;
+}

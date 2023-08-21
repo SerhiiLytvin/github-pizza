@@ -1,1 +1,58 @@
 /* =========== PIZZA ICONS  ==========*/
+
+.pizza-icons__wrapper {
+    background-color: #212121;
+}
+
+html {
+   &.dark {
+      pizza-icons__wrapper {
+      background-color: rgba(255, 255, 255, 0.05);
+      }
+
+      .pizza-icons__logo-name {
+      color: #FF8C42;
+      }
+   }
+
+   &.light {
+      pizza-icons__wrapper {
+      background-color: #212121;
+      }
+
+      .pizza-icons__logo-name {
+       color: #FF5B00;
+      }
+   }
+}
+
+.pizza-icons__header {
+    height: 129px;  
+    display: flex; 
+    justify-content: space-between; 
+    padding-right: 76px;
+}
+
+.pizza-icons__header-logo {
+    display: inline-block;
+    margin-top: 43px;
+}
+
+.pizza-icons__icons {
+    display: flex;
+}
+
+.icons-block__item {
+    margin-top: 53px;
+
+    &:not(:last-child) {
+      margin-right: 61px;
+   }
+}
+
+.icons-block__text {
+    font-family: 'Quicksand', cursive;
+    font-size: 600;
+    font-size: 32px;
+    color: #FFFFFF;
+}
